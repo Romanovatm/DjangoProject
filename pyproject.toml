@@ -1,12 +1,13 @@
 [project]
 name = "djangoproject"
 version = "0.1.0"
-description = ""
+description = "Учебный проект по созданию веб-приложений на фреймворке Django"
 authors = [
-    {name = "Your Name",email = "you@example.com"}
+    {name = "Romanovatm",email = "m10021994r@gmail.com"}
 ]
 requires-python = "^3.14"
 dependencies = [
+    "django (>=6.0,<7.0)"
 ]
 
 
