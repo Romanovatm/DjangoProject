@@ -3,6 +3,7 @@
 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
     <h1 class="display-4">Мой магазин</h1>
     <p class="lead">Мой магазин - это отличный выбор для ваших покупок</p>
+    <a href="{% url 'catalog:product_create' %}" class="btn btn-primary">Добавить продукт</a>
 </div>
 <div class="row text-center">
     {%for product in products %}
