@@ -12,6 +12,8 @@
     <p>Цена: {{ product.price }} руб.</p>
     <p>Добавлено на сайт: {{ product.created_at|date:"d M Y H:i:s" }}</p>
     <p>Последнее обновление: {{ product.updated_at|date:"d M Y H:i:s" }}</p>
-    <a class="p-2 btn btn-outline-primary" href="{% url 'catalog:home' %}">Вернуться</a>
+    <a href="{% url 'catalog:product_update' product.pk %}" class="btn btn-warning">Редактировать</a>
+    <a href="{% url 'catalog:product_delete' product.pk %}" class="btn btn-danger">Удалить</a>
+    <a href="{% url 'catalog:home' %}" class="btn btn-primary">Вернуться</a>
 </div>
 {% endblock %}
